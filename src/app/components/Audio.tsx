@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Audio() {
     return ( 
         <><div className="container">
@@ -12,11 +14,11 @@ function Audio() {
                 <div className="audio-player">
                   <button title="g" type="button" className="btn btn-primary btn-sm"><i className="fas fa-play"></i></button>
                   <div className="progress">
-                    <div title="h" className="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin={0} aria-valuemax={100}></div>
+                    <div title="h" className="progress-bar" role="progressbar" aria-valuenow={0} aria-valuemin={0} aria-valuemax={100}></div>
                   </div>
                 </div>
                 <div className="profile-info ms-4">
-                  <img src="avatar.jpg" alt="Avatar" className="rounded-circle"/>
+                  <Image src="avatar.jpg" alt="Avatar" className="rounded-circle"/>
                   <div className="profile-details">
                     <h6 className="mb-0">Shubha Nagarajan</h6>
                     <small>Classical Dancer</small>
